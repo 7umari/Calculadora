@@ -1,0 +1,37 @@
+﻿<Window x:Class="Calculador_do_Cindra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculador_do_Cindra"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="400">
+    <Grid x:Name="fundo_calculadora">
+        <Button x:Name="botao_resultado" Content="=" HorizontalAlignment="Left" Margin="309,540,0,0" VerticalAlignment="Top" Height="76" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1"/>
+        <Button x:Name="botao_resultado_Copy" Content="=" HorizontalAlignment="Left" Margin="309,540,0,0" VerticalAlignment="Top" Height="76" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF92ED94" Click="digitar_resultado"/>
+        <Button x:Name="botao_virgula" Content="," HorizontalAlignment="Left" Margin="212,540,0,0" VerticalAlignment="Top" Height="76" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-24,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_virgula"/>
+        <Button x:Name="botao_0" Content="0" HorizontalAlignment="Left" Margin="115,540,0,0" VerticalAlignment="Top" Height="76" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-3,1,1" BorderBrush="#FF1E4AB7" Background="#FF1E4AB7" Foreground="White" MouseLeftButtonDown="digitar_0" Click="digitar_0"/>
+        <Button x:Name="botao_resultado_Copy3" Content="=" HorizontalAlignment="Left" Margin="309,448,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1"/>
+        <Button x:Name="botao_adicionar" Content="+" HorizontalAlignment="Left" Margin="309,448,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF92ED94" Click="digitar_soma"/>
+        <Button x:Name="botao_3" Content="3" HorizontalAlignment="Left" Margin="212,448,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_3"/>
+        <Button x:Name="botao_2" Content="2" HorizontalAlignment="Left" Margin="115,448,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_2"/>
+        <Button x:Name="botao_resultado_Copy7" Content="=" HorizontalAlignment="Left" Margin="309,356,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1"/>
+        <Button x:Name="botao_subtrair" Content="-" HorizontalAlignment="Left" Margin="309,356,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF92ED94" Click="digitar_subtracao"/>
+        <Button x:Name="botao_6" Content="6" HorizontalAlignment="Left" Margin="212,356,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_6"/>
+        <Button x:Name="botao_5" Content="5" HorizontalAlignment="Left" Margin="115,356,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_5"/>
+        <Button x:Name="botao_resultado_Copy11" Content="=" HorizontalAlignment="Left" Margin="309,264,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1"/>
+        <Button x:Name="botao_multiplicar" Content="x" HorizontalAlignment="Left" Margin="309,264,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF92ED94" Click="digitar_multiplicacao"/>
+        <Button x:Name="botao_9" Content="9" HorizontalAlignment="Left" Margin="212,264,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_9"/>
+        <Button x:Name="botao_8" Content="8" HorizontalAlignment="Left" Margin="115,264,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_8"/>
+        <Button x:Name="botao_resultado_Copy15" Content="=" HorizontalAlignment="Left" Margin="309,172,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1"/>
+        <Button x:Name="botao_dividir" Content="÷" HorizontalAlignment="Left" Margin="309,172,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF92ED94" Click="digitar_divisao"/>
+        <Button x:Name="botao_D" Content="&lt;D" HorizontalAlignment="Left" Margin="212,172,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="45" FontWeight="Bold" Padding="1,-6,1,1" Background="#FF92ED94" Click="digitar_D"/>
+        <Button x:Name="botao_C" Content="C" HorizontalAlignment="Left" Margin="115,172,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-6,1,1" Background="#FF92ED94" Click="digitar_C"/>
+        <Button x:Name="botao_1" Content="1" HorizontalAlignment="Left" Margin="18,448,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_1"/>
+        <Button x:Name="botao_4" Content="4" HorizontalAlignment="Left" Margin="18,356,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_4"/>
+        <Button x:Name="botao_7" Content="7" HorizontalAlignment="Left" Margin="18,264,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF1E4AB7" Foreground="White" Click="digitar_7"/>
+        <Button x:Name="botao_CE" Content="CE" HorizontalAlignment="Left" Margin="18,172,0,0" VerticalAlignment="Top" Height="74" Width="81" FontSize="48" FontWeight="Bold" Padding="1,-9,1,1" Background="#FF92ED94" Click="digitar_CE"/>
+        <TextBlock x:Name="text_conta" HorizontalAlignment="Left" Margin="18,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="354" FontSize="18" TextAlignment="Right"/>
+        <TextBlock x:Name="text_numero" HorizontalAlignment="Left" Margin="18,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="354" FontSize="36" TextAlignment="Right"/>
+    </Grid>
+</Window>

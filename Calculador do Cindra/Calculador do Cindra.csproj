@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Calculador_do_Cindra</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="png-transparent-square-shape-blue-square-s-angle-white-text-thumbnail.png" />
+    <None Remove="png].png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="png-transparent-square-shape-blue-square-s-angle-white-text-thumbnail.png" />
+    <Resource Include="png].png" />
+  </ItemGroup>
+
+</Project>
